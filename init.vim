@@ -23,6 +23,8 @@ Plug 'https://github.com/neoclide/coc.nvim'
 
 " color schemas
 Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
+Plug 'ayu-theme/ayu-vim'
+Plug 'bluz71/vim-nightfly-colors'
 
 nmap <F8> :TagbarToggle<CR>
 
@@ -36,7 +38,10 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " Turn on vim-sneak
 let g:sneak#label = 1
-colorscheme OceanicNext
+"colorscheme OceanicNext
+"colorscheme ayu
+colorscheme nightfly
+
 "let g:material_terminal_italics = 1
 " variants: default, palenight, ocean, lighter, darker, default-community,
 "           palenight-community, ocean-community, lighter-community,
@@ -46,5 +51,4 @@ colorscheme OceanicNext
 if (has('termguicolors'))
 	set termguicolors
 endif
-
 
