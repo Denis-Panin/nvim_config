@@ -24,7 +24,9 @@ Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'akinsho/toggleterm.nvim'
- 
+Plug 'mattn/emmet-vim'
+
+
 " color schemas
 Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
 Plug 'ayu-theme/ayu-vim'
