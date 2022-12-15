@@ -10,6 +10,9 @@ set encoding=UTF-8
 filetype indent on       " load filetype-specific indent files
 
 
+set list
+set listchars=space:·,trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -20,7 +23,8 @@ Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
-
+Plug 'akinsho/toggleterm.nvim'
+ 
 " color schemas
 Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
 Plug 'ayu-theme/ayu-vim'
@@ -51,4 +55,6 @@ colorscheme nightfly
 if (has('termguicolors'))
 	set termguicolors
 endif
+
+
 
