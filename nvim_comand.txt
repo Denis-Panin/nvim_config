@@ -5,3 +5,7 @@ gt -> next tab
 gT -> previous tab
 ,f -> search for file
 ,g -> search for content in files
+ctrl+t -> open finded file in new tab
+ctrl+p -> move up in finder list
+ctrl+n -> move down in finder list
+

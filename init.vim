@@ -360,6 +360,7 @@ autocmd FileType sh map <buffer> <C-h> :w<CR>:exec '!bash' shellescape(@%, 1)<CR
 autocmd FileType sh imap <buffer> <C-h> <esc>:w<CR>:exec '!bash' shellescape(@%, 1)<CR>
 
 autocmd FileType python set colorcolumn=79
+highlight ColorColumn ctermbg=0 guibg=red
 
 set relativenumber
 set rnu
