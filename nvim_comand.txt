@@ -1,0 +1,7 @@
+F1 -> help in nerdtree(struct proj)
+gn -> зробити директорію головною
+t -> open file in new tab
+gt -> next tab
+gT -> previous tab
+,f -> search for file
+,g -> search for content in files

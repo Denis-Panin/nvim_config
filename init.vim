@@ -30,6 +30,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'bluz71/vim-nightfly-colors'
 Plug 'https://github.com/ap/vim-css-color'
+Plug 'ryanoasis/vim-devicons'
+Plug 'mattn/emmet-vim'
+
 "my_plug
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
