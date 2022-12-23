@@ -61,10 +61,6 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'nvim-lua/plenary.nvim'
 
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install --frozen-lockfile --production',
-  \ 'for': ['javascript', 'typescript', 'typescriptreact', 'javascriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
-
 Plug 'bmatcuk/stylelint-lsp'
 
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -84,13 +80,6 @@ let mapleader = ","
 let g:netrw_banner = 0 " hide banner above files
 let g:netrw_liststyle = 3 " tree instead of plain view
 let g:netrw_browse_split = 3 " vertical split window when Enter pressed on file
-
-" Automatically format frontend files with prettier after file save
-let g:prettier#autoformat = 1
-let g:prettier#autoformat_require_pragma = 0
-
-" Disable quickfix window for prettier
-let g:prettier#quickfix_enabled = 0
 
 " Turn on vim-sneak
 let g:sneak#label = 1
@@ -235,16 +224,6 @@ nvim_lsp.tsserver.setup({
         buf_map(bufnr, "n", "go", ":TSLspImportAll<CR>")
         on_attach(client, bufnr)
     end,
-})
-
-local null_ls = require("null-ls")
-null_ls.setup({
-    sources = {
-        null_ls.builtins.diagnostics.eslint,
-        null_ls.builtins.code_actions.eslint,
-        null_ls.builtins.formatting.prettier
-    },
-    on_attach = on_attach
 })
 
 -- Stylelint format after save
