@@ -75,6 +75,7 @@ Plug 'ray-x/lsp_signature.nvim'
 
 call plug#end()
 
+let g:user_emmet_leader_key='<C-space>'
 " Leader bind to space
 let mapleader = ","
 

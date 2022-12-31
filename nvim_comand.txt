@@ -9,3 +9,4 @@ ctrl+t -> open finded file in new tab
 ctrl+p -> move up in finder list
 ctrl+n -> move down in finder list
 g + d -> move to to definition
+ctrl+space ->(for emmet) autocomplete
