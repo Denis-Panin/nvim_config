@@ -32,7 +32,9 @@ Plug 'bluz71/vim-nightfly-colors'
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
-
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 "my_plug
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
