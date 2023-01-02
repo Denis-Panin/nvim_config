@@ -27,6 +27,7 @@ inoremap jk <esc>
 
 call plug#begin('~/.vim/plugged')
 "my_plug
+Plug 'ray-x/aurora'      " for Plug user
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'bluz71/vim-nightfly-colors'
 Plug 'https://github.com/ap/vim-css-color'
@@ -39,6 +40,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'preservim/nerdtree'
 "NERDTree plugins
 "my_plug
+
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -99,7 +101,15 @@ let g:netrw_browse_split = 3 " vertical split window when Enter pressed on file
 let g:sneak#label = 1
 
 "my_colorscheme
-colorscheme nightfly
+"colorscheme nightfly
+set termguicolors            " 24 bit color
+let g:aurora_italic = 1     " italic
+let g:aurora_transparent = 1     " transparent
+let g:aurora_bold = 1     " bold
+let g:aurora_darker = 1     " darker background
+
+colorscheme aurora
+
 "my_colorscheme
 "colorscheme gruvbox
 "colorscheme OceanicNext
