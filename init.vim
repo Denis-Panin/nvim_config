@@ -1,5 +1,5 @@
 set mouse=a  " enable mouse
-set encoding=utf-8
+set encoding=UTF-8
 set number
 set noswapfile
 set scrolloff=7
@@ -35,6 +35,9 @@ Plug 'mattn/emmet-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+"NERDTree plugins
+Plug 'preservim/nerdtree'
+"NERDTree plugins
 "my_plug
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
@@ -76,8 +79,16 @@ Plug 'ray-x/lsp_signature.nvim'
 call plug#end()
 
 let g:user_emmet_leader_key='<C-space>'
+
 " Leader bind to space
 let mapleader = ","
+
+" NERDTree settings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+let NERDTreeMapOpenInTab='<ENTER>'
 
 " Netrw file explorer settings
 let g:netrw_banner = 0 " hide banner above files
