@@ -27,6 +27,7 @@ inoremap jk <esc>
 
 call plug#begin('~/.vim/plugged')
 "my_plug
+Plug 'Yggdroot/indentLine'
 Plug 'ray-x/aurora'      " for Plug user
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'bluz71/vim-nightfly-colors'
@@ -91,6 +92,15 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
+
+" Identline
+" let g:indentLine_color_term = 000
+let g:indentLine_bgcolor_term = 2
+" let g:indentLine_bgcolor_gui = '#ef2626'
+let g:indentLine_char = 'c'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+
 
 " Netrw file explorer settings
 let g:netrw_banner = 0 " hide banner above files
