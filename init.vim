@@ -27,6 +27,9 @@ inoremap jk <esc>
 
 call plug#begin('~/.vim/plugged')
 "my_plug
+Plug 'lissaferreira/dalton-vim'
+Plug 'rafalbromirski/vim-aurora'
+Plug 'liuchengxu/space-vim-dark'
 Plug 'Yggdroot/indentLine'
 Plug 'ray-x/aurora'      " for Plug user
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -112,13 +115,26 @@ let g:sneak#label = 1
 
 "my_colorscheme
 "colorscheme nightfly
+
+"====colorscheme aurora====
+set background=dark
+colorscheme aurora
 set termguicolors            " 24 bit color
 let g:aurora_italic = 1     " italic
 let g:aurora_transparent = 1     " transparent
 let g:aurora_bold = 1     " bold
 let g:aurora_darker = 1     " darker background
+"====colorscheme aurora====
 
-colorscheme aurora
+"====colorscheme space-vim-dark====
+"colorscheme space-vim-dark
+"hi Comment cterm=italic
+" ====colorscheme space-vim-dark====
+
+"====colorscheme dalton====
+"colorscheme dalton
+"let g:airline_theme='dalton'
+"====colorscheme dalton====
 
 "my_colorscheme
 "colorscheme gruvbox
